@@ -63,26 +63,38 @@ const automobili = [
     },
 ]
 
-const benzina = automobili.filter((auto) => {
-    if (auto.alimentazione == 'benzina') {
-        return true
-    }
-})
+//opzione1
+// const benzina = automobili.filter((auto) => {
+//     if (auto.alimentazione == 'benzina') {
+//         return true
+//     }
+// })
+
+//opzione2
+const benzina = automobili.filter((auto) => auto.alimentazione == 'benzina');
 
 console.log(benzina);
 
-const diesel = automobili.filter((auto) => {
-    if (auto.alimentazione == 'diesel') {
-        return true
-    }
-})
+//opzione1
+// const diesel = automobili.filter((auto) => {
+//     if (auto.alimentazione == 'diesel') {
+//         return true
+//     }
+// })
+
+//opzione2
+const diesel = automobili.filter((auto) => auto.alimentazione == 'diesel');
 
 console.log(diesel);
 
-const altre = automobili.filter((auto) => {
-    if (auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel') {
-        return true
-    }
-})
+//opzione1
+// const altre = automobili.filter((auto) => {
+//     if (auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel') {
+//         return true
+//     }
+// })
+
+//opzione2
+const altre = automobili.filter((auto) => auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel');
 
 console.log(altre);
