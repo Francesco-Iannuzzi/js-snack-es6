@@ -10,6 +10,8 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 
 const wordsArray1 = [ 'pippo', 'PlUTO', 'Paperino'];
 
+console.log(wordsArray1);
+
 const wordsArray2 = wordsArray1.map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase());
 
 console.log(wordsArray2);
