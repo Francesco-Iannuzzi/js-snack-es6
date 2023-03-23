@@ -63,24 +63,24 @@ const automobili = [
     },
 ]
 
-const benzina = automobili.filter((numb) => {
-    if (numb.alimentazione == 'benzina') {
+const benzina = automobili.filter((auto) => {
+    if (auto.alimentazione == 'benzina') {
         return true
     }
 })
 
 console.log(benzina);
 
-const diesel = automobili.filter((numb) => {
-    if (numb.alimentazione == 'diesel') {
+const diesel = automobili.filter((auto) => {
+    if (auto.alimentazione == 'diesel') {
         return true
     }
 })
 
 console.log(diesel);
 
-const altre = automobili.filter((numb) => {
-    if (numb.alimentazione !== 'benzina' && numb.alimentazione !== 'diesel') {
+const altre = automobili.filter((auto) => {
+    if (auto.alimentazione !== 'benzina' && auto.alimentazione !== 'diesel') {
         return true
     }
 })
