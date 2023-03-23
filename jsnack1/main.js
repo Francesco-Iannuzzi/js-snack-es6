@@ -9,3 +9,80 @@ Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina
 Infine stampa separatamente i 3 array.
 
 */
+
+const automobili = [
+    {
+        marca: 'ferrari',
+        modello: 'mod1',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'lamborghini',
+        modello: 'mod2',
+        alimentazione: 'diesel'
+    },
+    {
+        marca: 'maserati',
+        modello: 'mod1',
+        alimentazione: 'gpl'
+    },
+    {
+        marca: 'pegeout',
+        modello: 'mod4',
+        alimentazione: 'elettrico'
+    },
+    {
+        marca: 'lotus',
+        modello: 'mod5',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'bmw',
+        modello: 'mod1',
+        alimentazione: 'metano'
+    },
+    {
+        marca: 'bmw',
+        modello: 'mod1',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'opel',
+        modello: 'mod1',
+        alimentazione: 'diesel'
+    },
+    {
+        marca: 'fiat',
+        modello: 'mod1',
+        alimentazione: 'benzina'
+    },
+    {
+        marca: 'mercedes',
+        modello: 'mod1',
+        alimentazione: 'diesel'
+    },
+]
+
+const benzina = automobili.filter((numb) => {
+    if (numb.alimentazione == 'benzina') {
+        return true
+    }
+})
+
+console.log(benzina);
+
+const diesel = automobili.filter((numb) => {
+    if (numb.alimentazione == 'diesel') {
+        return true
+    }
+})
+
+console.log(diesel);
+
+const altre = automobili.filter((numb) => {
+    if (numb.alimentazione !== 'benzina' && numb.alimentazione !== 'diesel') {
+        return true
+    }
+})
+
+console.log(altre);
